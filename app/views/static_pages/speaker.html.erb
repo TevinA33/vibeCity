@@ -1,2 +1,150 @@
-<h1>StaticPages#speaker</h1>
-<p>Find me in app/views/static_pages/speaker.html.erb</p>
+<% provide(:title, "Speakers") %>
+<!DOCTYPE html>
+<html>
+    <head>
+       <style>
+        body
+        {
+            background-color: black;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        
+            img
+            {
+                text-align:left ;
+                border:5px solid white;
+                Width:200px;
+                height:80px;
+                margin-left:0%;
+                margin-right:0%;
+                margin-top:2%;
+            }
+        
+            p
+            {
+              color: white; 
+              margin-left:8%;
+              margin-right:50%;
+              margin-top:0%;
+            }
+        
+            h2
+            {
+                color: white;
+                margin-left:20%;
+                margin-right:0%;
+                margin-top:5%;
+                Width:10%;
+                font-size: 50px;
+                font-style: italic;
+            }
+          
+            h1 
+            {
+                height:100px;
+               color: White; 
+               margin-left:0%;
+               margin-right:0%;
+               Width:0%;
+               font-size: 75px;
+               font-style: italic;
+            }
+            
+            li
+            {
+                float: left;
+            }
+            
+           li a, .dropbtn 
+           {
+            display: inline-block;
+            color: White;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+            
+            li a:hover, .dropdown:hover .dropbtn
+            {
+                background-color: red;
+            }
+          
+           
+           li.dropdown 
+            {
+                display: inline-block;
+            }
+           
+           .dropdown-content 
+           {
+                    display: none;
+                    position: absolute;
+                    background-color: black;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    z-index: 1;
+            }
+           
+           
+           .dropdown-content a 
+           {
+                color: red;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+           }
+           
+            
+            
+            .dropdown-content a:hover {background-color: white}
+            
+           .dropdown:hover .dropdown-content 
+            {
+                display: block;
+            }
+            
+        </style>
+         <title><%= yield(:title) %> | Speakers</title>
+    </head>
+    <body>
+         <img src="images/djpic.jpg" alt= "VibeCity"   width = "40%"/>
+        
+  <ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#About">About Us</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Equipment</a>
+            <div class="dropdown-content">
+                  <a href="#">Music</a>
+                  <a href="#">Mixers</a>
+                  <a href="#">Speakers</a>
+                  <a href="#">Miscellaneous</a>
+            </div>
+     </li>
+     <li><a href="#membership">Membership</a></li>
+     <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#signin">Sign In</a></li>
+    </ul>
+    
+    <h2> VibeCity Speakers!!!</h2>
+    
+    <p>Our DJ speakers are guaranteed to give you the most bang for your buck.</p>
+    
+    <img  src="images/djspeakerkit1.jpg" alt= "Mixer1" height="50%" width = "30%"/>
+    <p>
+     Kit 1: $600.00
+    </p>
+     
+      <img  src="images/djspeakerkit2.jpg" alt= "Mixer1" height="50%" width = "30%"/>
+     <p>
+     Kit 2: $700.00
+    </p>
+    
+    <img  src="images/djspeakers3.jpg" alt= "Mixer1" height="50%" width = "30%"/>
+    <p>
+     Kit 3: $1500.00
+    </p>
+    </body>
+</html>

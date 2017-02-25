@@ -1,2 +1,13 @@
-<h1>StaticPages#miscellaneous</h1>
-<p>Find me in app/views/static_pages/miscellaneous.html.erb</p>
+<% provide(:title, "Reviews") %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %> | Reviews</title>
+  </head>
+  <body>
+    <h1>Reviews</h1>
+    <p>
+      This is the home page for the VibeCity.
+    </p>
+  </body>
+</html>

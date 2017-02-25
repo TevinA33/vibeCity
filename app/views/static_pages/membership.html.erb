@@ -1,2 +1,13 @@
-<h1>StaticPages#membership</h1>
-<p>Find me in app/views/static_pages/membership.html.erb</p>
+<% provide(:title, "Membership") %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %> | Membership</title>
+  </head>
+  <body>
+    <h1>VibeCity Membership</h1>
+    <p>
+      This is the membership page for the VibeCity application.
+    </p>
+  </body>
+</html>
