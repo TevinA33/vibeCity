@@ -1,4 +1,20 @@
 Rails.application.routes.draw do
+  get 'static_pages/home'
+
+  get 'static_pages/mixer'
+
+  get 'static_pages/music'
+
+  get 'static_pages/speaker'
+
+  get 'static_pages/reviews'
+
+  get 'static_pages/miscellaneous'
+
+  get 'static_pages/membership'
+
+  get 'static_pages/about'
+
   resources :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
