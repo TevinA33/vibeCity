@@ -1,3 +1,4 @@
+<% provide(:title,"Speakers") %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -105,27 +106,26 @@
             }
             
         </style>
-        <title>VibeCity </title>
+       <title><%= yield(:title) %>| Speakers</title>
     </head>
     <body>
         <h1>VibeCity</h1>
          <img src="images/djpic.jpg" alt= "VibeCity"   width = "40%"/>
         
   <ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#About">About Us</a></li>
+  <li><a href="Homepage.html">Home</a></li>
   <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Equipment</a>
             <div class="dropdown-content">
-                  <a href="#">Music</a>
-                  <a href="#">Mixers</a>
+                  <a href="Musicpage.html">Music</a>
+                  <a href="Mixerpage.html">Mixers</a>
                   <a href="#">Speakers</a>
-                  <a href="#">Miscellaneous</a>
+                  <a href="Miscellaneous.html">Miscellaneous</a>
             </div>
      </li>
-     <li><a href="#membership">Membership</a></li>
-     <li><a href="#reviews">Reviews</a></li>
-      <li><a href="#signin">Sign In</a></li>
+     <li><a href="membership.html">Membership</a></li>
+     <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="signin.html">Sign In</a></li>
     </ul>
     
     <h2> VibeCity Speakers!!!</h2>

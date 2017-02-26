@@ -1,14 +1,135 @@
 <% provide(:title, "Reviews") %>
-<!DOCTYPE html>
 <html>
-  <head>
-    <title><%= yield(:title) %> | Reviews</title>
-  </head>
-  <body>
-    <h1>Reviews</h1>
-    <p>
-      This is the review page for the VibeCity.
-    </p>
-  </body>
+    <head>
+       <style>
+        body
+        {
+            background-color: black;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        
+            img
+            {
+                text-align:left ;
+                border:5px solid white;
+                Width:200px;
+                height:80px;
+                margin-left:0%;
+                margin-right:0%;
+                margin-top:2%;
+            }
+        
+            p
+            {
+              color: white; 
+              margin-left:8%;
+              margin-right:50%;
+              margin-top:0%;
+            }
+        
+            h2
+            {
+                color: white;
+                margin-left:20%;
+                margin-right:0%;
+                margin-top:5%;
+                Width:10%;
+                font-size: 50px;
+                font-style: italic;
+            }
+          
+            h1 
+            {
+                height:100px;
+               color: White; 
+               margin-left:0%;
+               margin-right:0%;
+               Width:0%;
+               font-size: 75px;
+               font-style: italic;
+            }
+            
+            li
+            {
+                float: left;
+            }
+            
+           li a, .dropbtn 
+           {
+            display: inline-block;
+            color: White;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+            
+            li a:hover, .dropdown:hover .dropbtn
+            {
+                background-color: red;
+            }
+          
+           
+           li.dropdown 
+            {
+                display: inline-block;
+            }
+           
+           .dropdown-content 
+           {
+                    display: none;
+                    position: absolute;
+                    background-color: black;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    z-index: 1;
+            }
+           
+           
+           .dropdown-content a 
+           {
+                color: red;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+           }
+           
+            
+            
+            .dropdown-content a:hover {background-color: white}
+            
+           .dropdown:hover .dropdown-content 
+            {
+                display: block;
+            }
+            
+        </style>
+         <title><%= yield(:title) %> | Reviews</title>
+    </head>
+    <body>
+        <h1>VibeCity</h1>
+         <img src="images/djpic.jpg" alt= "VibeCity"   width = "40%"/>
+        
+   <ul>
+  <li><a href="Homepage.html">Home</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Equipment</a>
+            <div class="dropdown-content">
+                  <a href="Musicpage.html">Music</a>
+                  <a href="Mixerpage.html">Mixers</a>
+                  <a href="Speakerpage.html">Speakers</a>
+                  <a href="Miscellaneous.html">Miscellaneous</a>
+            </div>
+     </li>
+     <li><a href="membership.html">Membership</a></li>
+     <li><a href="#">Reviews</a></li>
+      <li><a href="signin.html">Sign In</a></li>
+    </ul>
+    
+    <h2> VibeCity Reviews!!!</h2>
+    
+    <p></p>
+    
+    </body>
 </html>
-
